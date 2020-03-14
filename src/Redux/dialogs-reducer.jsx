@@ -42,3 +42,4 @@ export const sendMessageCreator = () => ({type: SEND_MESSAGE});
 export const updateNewMessageTextCreator = (text) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: text});
 
 export default dialogsReducer;
+
