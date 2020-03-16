@@ -19,10 +19,10 @@ const App = (props) => {
             <div className="add-wrapper-content">
                 <Route path='/Profile' render={() => <Profile/>}/>
                 <Route path='/Dialogs' render={() => <DialogsContainer/>}/>
-                <Route path='/News' component={News}/>
-                <Route path='/Music' component={Music}/>
-                <Route path='/Settings' component={Settings}/>
-                <Route path='/Users' component={()=><UsersContainer/>}/>
+                <Route path='/News' render={News}/>
+                <Route path='/Music' render={Music}/>
+                <Route path='/Settings' render={Settings}/>
+                <Route path='/Users' render={() => <UsersContainer/>}/>
             </div>
         </div>
     )
