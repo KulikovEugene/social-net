@@ -50,5 +50,8 @@ export const followActionCreator = (userId) => ({type: FOLLOW, userId});
 export const unfollowActionCreator = (userId) => ({type: UNFOLLOW, userId});
 export const setUsersActionCreator = (users) => ({type: SET_USERS, users});
 export const setCurrentPageActionCreator = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
-export const setTotalUsersCountActionCreator = (totalUsersCount) => ({type: SET_TOTAL_USERS_COUNT, totalCount: totalUsersCount});
+export const setTotalUsersCountActionCreator = (totalUsersCount) => ({
+    type: SET_TOTAL_USERS_COUNT,
+    totalCount: totalUsersCount
+});
 export default usersReducer;
